@@ -14,12 +14,14 @@ const double fluid_ounce = 28.4130625; // mililiter
 const double stone = 6.35029318; // kg
 const double pound = 0.45359237; // kg
 const double ounce = 28.34952337; // g
-double værdien;
+double vï¿½rdien;
 double resultat;
 
 int main()
 {
 	cout << "Omregner \n \n";
+
+	// vÃ¦lg hvad du vil regne fra?
 
 	string imme;
 	cout << "V\x91lge hvad du vil omregne fra:\n1) metrisk\n2) imperisk\n";
@@ -36,6 +38,8 @@ int main()
 
 		label:
 
+		//vÃ¦lg hvad du vil regne til
+
 		string til;
 		cout << "Hvad vil du omregne til?\n";
 		cout << "1) mile\n2) yard\n3) foot\n4) inch\n5) acre\n6) gallon\n7) pint\n8) fluid ounce\n9) stone\n10) pound\n11) ounce\n12) fahrenheit\n";
@@ -44,85 +48,85 @@ int main()
 		//omregn fra meter til miles
 		if (fra == "1" && til == "1") {
 			cout << "indtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien / mile;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / mile;
 			cout << "\n" << resultat << " miles ";
 		}
 		// omregn fra hektar til acre
 		else if (fra == "2" && til == "5") {
 			cout << "indtast v\x91rdi:";
-			cin >> værdien;
-			resultat = værdien / acre;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / acre;
 			cout << "\n" << resultat << " acres";
 		}
 		// omregn fra mililiter til gallon
 		else if (fra == "3" && til == "6") {
 			cout << "indtast v\x91rdi:";
-			cin >> værdien;
-			resultat = værdien / gallon;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / gallon;
 			cout << "\n" << resultat << " gallons";
 		}
 		// omregn fra kg til pound
 		else if (fra == "4" && til == "10") {
 			cout << "indtast v\x91rdi:";
-			cin >> værdien;
-			resultat = værdien / pound;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / pound;
 			cout << "\n" << resultat << " pounds";
 		}
 		// omregn fra g til ounce
 		else if (fra == "5" && til == "11") {
 			cout << "indtast v\x91rdi:";
-			cin >> værdien;
-			resultat = værdien / ounce;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / ounce;
 			cout << "\n" << resultat << " ounces";
 		}
 		//omregn fra celsius til fahrenheit
 		else if (fra == "6" && til == "12") {
 			cout << "indtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * 1.8 + 32;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * 1.8 + 32;
 			cout << "\n" << resultat << " fahrenheit ";
 		}
 		//omregn fra meter til yards
 		else if (fra == "1" && til == "2") {
 			cout << "indtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien / yard;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / yard;
 			cout << "\n" << resultat << " yards ";
 		}
 		//omregn fra meter til foot
 		else if (fra == "1" && til == "3") {
 			cout << "indtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien / foot;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / foot;
 			cout << "\n" << resultat << " feets ";
 		}
 		//omregn fra meter til inch
 		else if (fra == "1" && til == "4") {
 			cout << "indtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien / inch;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / inch;
 			cout << "\n" << resultat << " inches ";
 		}
 		// omregn fra mililiter til pint
 		else if (fra == "3" && til == "7") {
 			cout << "indtast v\x91rdi:";
-			cin >> værdien;
-			resultat = værdien / pint;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / pint;
 			cout << "\n" << resultat << " pints";
 		}
 		// omregn fra mililiter til fluid ounce
 		else if (fra == "3" && til == "8") {
 			cout << "indtast v\x91rdi:";
-			cin >> værdien;
-			resultat = værdien / fluid_ounce;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / fluid_ounce;
 			cout << "\n" << resultat << " fluid ounces";
 		}
 		// omregn fra kg til stone
 		else if (fra == "4" && til == "9") {
 			cout << "indtast v\x91rdi:";
-			cin >> værdien;
-			resultat = værdien / stone;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien / stone;
 			cout << "\n" << resultat << " stones";
 		}
 		else {
@@ -144,96 +148,96 @@ int main()
 		//omregn fra miles
 		if (fra == "1" || fra == "mile") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * mile;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * mile;
 			cout << "\n" << resultat << " meter ";
 		}
 		// omregn fra yards
 		if (fra == "2" || fra == "yard") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * yard;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * yard;
 			cout << "\n" << resultat << " meter ";
 		}
 		//omregn fra foot
 		if (fra == "3" || fra == "foot") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * foot;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * foot;
 			cout << "\n" << resultat << " meter ";
 		}
 		//omregn fra inch
 		if (fra == "4" || fra == "inch") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * inch;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * inch;
 			cout << "\n" << resultat << " meter ";
 		}
 		//omregn fra acre
 		if (fra == "5" || fra == "acre") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * acre;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * acre;
 			cout << "\n" << resultat << " hektar ";
 		}
 		//omregn fra gallon
 		if (fra == "6" || fra == "gallon") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * gallon;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * gallon;
 			cout << "\n" << resultat << " mililiter ";
 		}
 		//omregn fra pint
 		if (fra == "7" || fra == "pint") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * pint;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * pint;
 			cout << "\n" << resultat << " mililiter ";
 		}
 		//omregn fra fluid ounce
 		if (fra == "8" || fra == "fluid ounce") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * fluid_ounce;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * fluid_ounce;
 			cout << "\n" << resultat << " mililiter ";
 		}
 		//omregn fra stone
 		if (fra == "9" || fra == "stone") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * stone;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * stone;
 			cout << "\n" << resultat << " kg ";
 		}
 		//omregn fra pound
 		if (fra == "10" || fra == "pound") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * pound;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * pound;
 			cout << "\n" << resultat << " kg ";
 		}
 		//omregn fra ounce
 		if (fra == "11" || fra == "ounce") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = værdien * ounce;
+			cin >> vï¿½rdien;
+			resultat = vï¿½rdien * ounce;
 			cout << "\n" << resultat << " g ";
 		}
 		//omregn fra Fahrenheit til celsius
 		if (fra == "12" || fra == "fahrenheit") {
 			cout << "\nindtast v\x91rdi: ";
-			cin >> værdien;
-			resultat = (værdien - 32) * 5 / 9;
+			cin >> vï¿½rdien;
+			resultat = (vï¿½rdien - 32) * 5 / 9;
 			cout << "\n" << resultat << " Celsius ";
 		}
 	}
-
-	string færdig;
+	// mulighed for at starte forfra eller lukke programmet
+	string fï¿½rdig;
 	cout << "\nVil du starte for fra?\n1) ja\n2) nej\n";
-	cin >> færdig;
-	if (færdig == "1" || færdig == "ja") {
+	cin >> fï¿½rdig;
+	if (fï¿½rdig == "1" || fï¿½rdig == "ja") {
 		main();
 	}
-	else (færdig == "2" || færdig == "nej"); {
+	else (fï¿½rdig == "2" || fï¿½rdig == "nej"); {
 		exit;
 	}
 	
